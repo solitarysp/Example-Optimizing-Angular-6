@@ -1,0 +1,23 @@
+
+
+<div class="row">
+<div>addNewNotTrackBy</div>
+  <select>
+    <option *ngFor="let option of optionssNotTrackBy"
+            [value]="option.id">
+      {{option.name}}
+    </option>
+  </select>
+  <button (click)="addNewNotTrackBy()">addNewNotTrackBy</button>
+</div>
+
+<div class="row">
+  <div>addNewHaveTrackBy</div>
+  <select>
+    <option *ngFor="let option of optionssHaveTrackBy ;trackBy: trackByFn"
+            [value]="option.id">
+      {{option.name}}
+    </option>
+  </select>
+  <button (click)="addNewHaveTrackBy()">addNewHaveTrackBy</button>
+</div>

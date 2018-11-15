@@ -5,7 +5,7 @@ import {Skill} from '../../model/Skill';
   selector: 'app-test-on-push',
   templateUrl: './test-on-push.component.html',
   styleUrls: ['./test-on-push.component.scss'],
-  changeDetection: ChangeDetectionStrategy.Default
+  changeDetection: ChangeDetectionStrategy.OnPush
 
 
 })
